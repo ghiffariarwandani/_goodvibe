@@ -1,8 +1,14 @@
 const route = require('express').Router();
 
-const productRoute = require('./product');
+const artisRoute = require('./r_artist');
+const albumRoute = require('./r_album');
+const merchRoute = require('./r_merch');
 
-route.use('/product', productRoute);
+
+route.use('/artist', artisRoute);
+route.use('/album', albumRoute);
+route.use('/merch', merchRoute);
+
 
 
 module.exports = route;

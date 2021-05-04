@@ -4,6 +4,6 @@ const ArtistSchema = new Schema({
   name: { type: String }
 });
 
-const Artis = model('Artis', ArtistSchema);
+const Artist = model('Artist', ArtistSchema);
 
-module.exports = Artis;
+module.exports = Artist;
