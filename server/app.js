@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const express = require('express');
 const routes = require('./routes');
 const mongoose = require('mongoose');
-// const errorHandler = require('./middlewares/error_handler');
+const { errorHandling } = require('./middlewares/error/error');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,6 +24,6 @@ mongoose.connect('mongodb://localhost:27017/_goodvibe', { useNewUrlParser: true 
 });
 
 app.use('/', routes);
-// app.use(errorHandler);
+app.use(errorHandling);
 
 app.listen(port, () => console.log(`you listen on port ${port}`));
