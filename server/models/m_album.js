@@ -8,7 +8,7 @@ const AlbumSchema = new Schema({
   price: { type: Number },
   year: { type: Number },
   genre: { type: String },
-  artisName: { type: ObjectId }
+  artistId: { type: ObjectId, ref: 'Artist' }
 }, {
   timestamps: true
 });

@@ -4,8 +4,8 @@ const MerchSchema = new Schema({
   name: { type: String },
   quantity: { type: Number },
   type: { type: String },
-  picture: { type: String },
-  artisName: { type: ObjectId },
+  picture: [{ type: String }],
+  artisId: { type: ObjectId, ref: 'Artist' },
 }, {
   timestamps: true
 });
