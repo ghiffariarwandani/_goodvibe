@@ -18,6 +18,9 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "eslint": "^7.26.0",
+    "prettier": "^2.3.0",
+    "prettier-eslint": "^12.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "_id": "goodvibeweb@0.1.0",
